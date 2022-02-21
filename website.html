@@ -1,0 +1,64 @@
+<!-- We will use external CSS for this -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <!-- Linking external stylesheet -->
+    <!-- rel is just for reference that tells us that it is a stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Inserting favicon -->
+    <link rel="shortcut icon" href="./Images/Earth.png"/>
+
+</head>
+<body>
+    
+    <!-- There are many semantic tags that help us as many <div> tags just create clutter, these semantic tags help us in dividing sections more clearly (They function just like <div> tags. Example: <section>, <nav>, <header>, <article>, <footer> tags ) -->
+
+    <header>
+        <h1>DEV 101</h1>
+        <nav>
+            <ul>
+                <li><a href="">HTML5</a></li>
+                <li><a href="">CSS3</a></li>
+                <li><a href="">JavaScript</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <img src="./Images/lap.jpeg" alt="Picture" class="showcase_img">
+    </section>
+
+    <!-- We can add content like paragraphs etc int this semantic tag -->
+    <article>
+        <div class="container">
+            <img src="./Images/html.png" alt="HTML Icon">
+            <h1>HTML</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio fuga iure, sed minus odio eos.</p>
+        </div>
+        <div class="container">
+            <img src="./Images/css.png" alt="CSS Icon">
+            <h1>CSS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem assumenda atque corporis nisi ipsa quo!</p>
+        </div>
+        <div class="container">
+            <img src="./Images/icon.png" alt="JS Icon">
+            <h1>JavaScript</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ab at ad quis, modi porro?</p>
+        </div>
+    </article>
+
+    <footer>
+        <p class="footer">
+            <!-- This shortcut is for copyright sign -->
+            &copy; Yathaarth Suri 2k22
+        </p>
+    </footer>
+
+</body>
+</html>
