@@ -1,6 +1,8 @@
 // Variables store values
 // In JS we don't need to specify type of variable like int, float, string, etc. So JS is dynamically types language
 
+// This is how you comment in JS
+
 // We declare variables in JS using var, let, const
 
 var a; // variable will always be initialised by an undefined value
