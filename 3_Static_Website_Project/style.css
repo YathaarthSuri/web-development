@@ -1,0 +1,104 @@
+
+html{
+    font-family: sans-serif;
+}
+
+header>h1{
+    font-weight: 200;
+}
+
+header{
+    /* We are doing this since by default <h1> and <nav> tags are block elements and thus they come on next line, but we need to get them on the same line so we use display flex */
+    /* display: flex arranges it side by side */
+    display: flex;
+
+    /* This justifies content according to our wish */
+    /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    /* Above is the website to read more about flexbox */
+    justify-content: space-between;
+
+    margin: 0 3rem;
+}
+
+li{
+    list-style: none;
+    /* Above is to remove bullet points */
+
+    /* By default font size is 16px. Our root element is HTML and so 1 rem = 16px */
+    /* So if we change the font size of html element to any value other than 16px, then rem will be relative to that value */
+    /* rem, vh, vw are responsive but px is not. So px will not be responsive when screen size changes*/
+    font-size: 1.5rem;
+}
+
+ul{
+    display: flex;
+
+    /* We could use (justify-content: space-between;) here, but the thing is that <nav> does nothing when we write the above statement because it doesn't have more space by default inside it, so it will just write everything in one line without space */
+    /* So what we could do is that we can give more width to nav */
+    justify-content: space-between;
+}
+
+nav{
+    /* Given more width to rem in order to use justify-content */
+    width: 22rem;
+
+    /* BELOW IS CSS POSITIONING */
+    /* What below does is that, when we write below css allows us to move the current element relative to its current default position */
+    /* Here positioning by using margin is not a good option */
+    position: relative;
+
+    /* Below is the syntax to move the element */
+    /* Below unit is given by hit and trial */
+    top: 0.8rem;
+}
+
+.showcase_img{
+    /* vw is a unit which says that if 95vw is given then 95% of the screen is filled */
+    /* Since vw is a responsive unit, thus as the screen size changes the picture will cover 95% of the screen according to the screen size */
+    width: 95vw;
+
+    margin: 1rem;
+}
+
+article{
+    display: flex;
+    margin: 1.5rem;
+}
+
+.container{
+    /* Below is to align the text to center */
+    /* An image can also be aligned using text align provided it is placed inside a block element, here, <div> tag is the block element */
+    text-align: center;
+
+    margin-right: 2rem;
+    padding: 1rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 4rem;
+    font-size: 1.5rem;
+
+    /* This property vertically aligns the items */
+    align-items: center;
+}
+
+a{
+    /* Below property is to decroate text, here, remove underline */
+    text-decoration: none;
+    color: black;
+}
+
+/* Effects that take place when you hover over that element */
+/* Hover is function given by css */
+a:hover{
+    color:tomato;
+    cursor:default;
+}
