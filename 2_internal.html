@@ -1,0 +1,36 @@
+<!-- TYPES OF CSS : Internal and Inline-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of CSS</title>
+
+    <!-- This is internal CSS -->
+    <!-- But inline css has more priority over internal css, so if we also include inline css in <h2> tag then that style will override internal css' style-->
+
+    <style>
+        /* This is element selector */
+        h2{
+            color: chocolate;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- This is Inline CSS -->
+
+    <h1 style="color: chartreuse;">This is Heading 1</h1>
+    <h1>This is Heading 2</h1>
+    <h1>This is Heading 3</h1>
+
+    <!-- Below tags are getting used by Internal CSS -->
+    <!-- First is showing that inline css is overriding internal css -->
+    <h2 style="color:darkolivegreen">Hello there</h2>
+    <h2>Hello there</h2>
+    <h2>Hello there</h2>
+    
+</body>
+</html>
