@@ -22,7 +22,7 @@ sum(a, b);      // function calling or invoking the function
 
 // Functions are treated as First-Class citizen in JS, because in JS functions can be treated like variables
 // In other languages variables are first-class citizens, that is a program can't work without variables
-// But in JavaScript, functions and variabels both are first class citizens, that is JS doesn't differentiate between functions and variables
+// But in JavaScript, functions and variables both are first class citizens, that is JS doesn't differentiate between functions and variables
 
 let sayHi = function(){                             // Anonymous function, since this does not have any name
     console.log('Hi I am a first class citizen');
