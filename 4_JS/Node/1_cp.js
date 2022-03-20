@@ -8,13 +8,13 @@
 const cp = require('child_process')
 // Now we have the module on this cp variable
 
-console.log('Trying to open calculator with Child Process')
+// console.log('Trying to open calculator with Child Process')
 
-cp.execSync('calc')     // Works on windows
+// cp.execSync('calc')     // Works on windows
 
 // Basically what child process is doing is that, it is accessing external processes and also using it. Calc command on windows opens a calculator, so child process also does that from inside the script.
 
-console.log('Calculator Opened')
+// console.log('Calculator Opened')
 
 // similarly to open VS Code in Windows
 
@@ -28,3 +28,10 @@ console.log('Calculator Opened')
 // cp.execSync('open "/Applications/Google Chrome.app"')
 // console.log("Chrome opened")
 
+
+
+// Running code from another file
+
+let output = cp.execSync('node 2_test.js')
+
+console.log("output is "+ output);
